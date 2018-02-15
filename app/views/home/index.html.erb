@@ -2,8 +2,8 @@
 <p>Tapez votre tweet ci-dessous  </p>
 
 
-<%= form_tag("/home/index") do %>
- <%= text_field_tag(:tweet) %>
- <%= submit_tag("Send tweet") %>
-<% end %>
+  <%= form_tag("/tweet") do %>
+  <%= text_field_tag(:tweet) %>
+  <%= submit_tag("Send tweet") %>
+  <% end %>
 
