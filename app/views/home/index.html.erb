@@ -1,0 +1,9 @@
+<h1>Tweets sans filet</h1>
+<p>Tapez votre tweet ci-dessous  </p>
+
+
+<%= form_tag("/home/index") do %>
+ <%= text_field_tag(:tweet) %>
+ <%= submit_tag("Send tweet") %>
+<% end %>
+
