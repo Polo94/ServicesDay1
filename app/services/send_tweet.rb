@@ -10,7 +10,7 @@ require 'twitter'
   
   def perform
   log_in_to_twitter
-  send_tweet
+  send_tweet(@twitt)
   end
 
   def log_in_to_twitter
