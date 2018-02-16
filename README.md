@@ -1,24 +1,7 @@
-# README
+les tweets peuvent être envoyés en local avec la console :
+- rails c 
+- SendTweet.new("Bonjour monde!").perform ]. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+En revanche, il y a un bug sur le site, pas réussi à résoudre cette énigme...
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+mon compte twitter pour la vérif des tweets : https://twitter.com/Botoxifier?lang=fr
