@@ -4,13 +4,13 @@ class SendTweet
 require 'dotenv'
 require 'twitter'
   
-  def initialize(twitt)
+  def initialize
   @twitt = twitt
   end
   
   def perform
   log_in_to_twitter
-  send_tweet(@twitt)
+  send_tweet
   end
 
   def log_in_to_twitter
