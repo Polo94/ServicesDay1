@@ -1,10 +1,19 @@
 class HomeController < ApplicationController
   
   def index
-  content = params.permit(:tweet)
-  newtweet = SendTweet.new(content['tweet']).perform
-  flash[:success] = "Envoi réussi"
   
   end
+
+  def tweet
+    @message = tweet_params[:content]
+    SendTweet.new(@message).perform
+  end
+
+  def tweet_params
+
+  	params.require(:tweet).permit(:content)
+  end
+
+
 
 end

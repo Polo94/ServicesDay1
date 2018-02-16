@@ -1,7 +1,7 @@
 
 class SendTweet
 
-require 'dotenv-rails'
+require 'dotenv'
 require 'twitter'
   
   def initialize(tweet)
