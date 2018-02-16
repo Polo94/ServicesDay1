@@ -5,8 +5,8 @@ class HomeController < ApplicationController
   end
 
   def tweet
-    @message = tweet_params[:content]
-    SendTweet.new(@message).perform
+    @twitt = tweet_params[:content]
+    SendTweet.new(@twitt).perform
   end
 
   def tweet_params

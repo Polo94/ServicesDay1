@@ -4,8 +4,8 @@ class SendTweet
 require 'dotenv'
 require 'twitter'
   
-  def initialize(tweet)
-  @tweet = tweet
+  def initialize(twitt)
+  @twitt = twitt
   end
   
   def perform
@@ -24,7 +24,7 @@ require 'twitter'
   end
 
   def send_tweet
-  @client.update("#{@tweet}")
+  @client.update(@twitt)
   end
 
 end
