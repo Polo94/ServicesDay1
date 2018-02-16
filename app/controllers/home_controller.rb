@@ -6,7 +6,6 @@ class HomeController < ApplicationController
   def tweet
     @twitt = tweet_params[:content]
     SendTweet.new(@twitt).perform
-    redirect_to root_path
 
   end
 
