@@ -23,7 +23,7 @@ require 'twitter'
     end
   end
 
-  def send_tweet
+  def send_tweet(twitt)
   @client.update(@twitt)
   end
 
