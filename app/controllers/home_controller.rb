@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
   
   def index
-  
   end
 
   def tweet
@@ -10,7 +9,6 @@ class HomeController < ApplicationController
   end
 
   def tweet_params
-
   	params.require(:tweet).permit(:content)
   end
 
